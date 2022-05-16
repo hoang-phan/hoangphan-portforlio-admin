@@ -8,8 +8,8 @@ class CreateProjects < ActiveRecord::Migration[7.0]
       t.text :summary
       t.text :challenge
       t.text :resolution
-      t.text :code_url
-      t.text :live_url
+      t.string :code_url
+      t.string :live_url
 
       t.timestamps
     end
