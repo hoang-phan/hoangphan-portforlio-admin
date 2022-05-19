@@ -15,7 +15,7 @@ ActiveAdmin.register Company do
     attributes_table *Company.column_names do
       row :logo do |company|
         if company.logo.attached?
-          image_tag_without_cloudinary(company.logo.attachment.url)
+          image_tag(url_for company.logo)
         end
       end
     end

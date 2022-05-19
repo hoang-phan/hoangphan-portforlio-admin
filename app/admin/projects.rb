@@ -17,7 +17,7 @@ ActiveAdmin.register Project do
     attributes_table *Project.column_names do
       row :image do |project|
         if project.image.attached?
-          image_tag_without_cloudinary(project.image.attachment.url)
+          image_tag(url_for project.image)
         end
       end
     end

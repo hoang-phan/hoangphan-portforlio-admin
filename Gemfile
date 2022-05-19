@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.1'
+ruby '3.1.1'
 
 gem 'rails'
 gem 'pg'
@@ -15,7 +15,6 @@ gem 'rack-cors'
 gem 'activeadmin'
 gem 'devise'
 gem 'bootsnap', require: false
-gem 'cloudinary'
 gem 'acts-as-taggable-on'
 
 group :development, :test do
