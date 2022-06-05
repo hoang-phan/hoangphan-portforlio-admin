@@ -1,24 +1,34 @@
-# README
+# Hoang Phan Portfolio Admin and API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails admin and api for https://github.com/hoang-phan/hoangphan-portfolio
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+### Dependencies
 
-* System dependencies
+Ruby 3, Rails 7, Ubuntu (preferred) or MacOS
 
-* Configuration
+### Installing
 
-* Database creation
+Install Ruby on Rails gems
 
-* Database initialization
+```sh
+bundle
+```
 
-* How to run the test suite
+### Executing program
 
-* Services (job queues, cache servers, search engines, etc.)
+Create database
+```sh
+bundle exec rails db:create db:migrate
+```
 
-* Deployment instructions
+Run server (Note that the port must be different than frontend dev server)
+```sh
+bundle exec rails server -p 3001
+```
 
-* ...
+## Authors
+
+Hoang Phan
+[@hoang-phan](https://github.com/hoang-phan)
